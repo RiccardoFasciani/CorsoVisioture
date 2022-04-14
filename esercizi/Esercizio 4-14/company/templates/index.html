@@ -1,0 +1,6 @@
+<a href="{% url 'clientiperagente' %}">Cerca il numero di clienti per agente</a>
+<br>
+<h2>Cerca i clienti in base all'agente</h2>
+<form action={% url 'clientibyagente' %} method='get' >
+    <input name='inputagente'type="text" placeholder='Agente'>
+</form>
