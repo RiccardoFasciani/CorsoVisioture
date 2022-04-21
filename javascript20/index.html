@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css" media="screen">
+		body {
+			line-height: 140%;
+			margin: 50px;
+			width: 650px;
+		}
+		code {font-size: 120%;}
+
+		pre code {
+			background-color: #eee;
+			border: 1px solid #999;
+			display: block;
+			padding: 20px;
+            white-space: nowrap;
+            overflow: auto;
+            text-align: center;
+		}
+	</style>
+    <title>Gruppo 1 - Index</title>
+</head>
+<body>
+    <h1>Gruppo 1 - Esercizi 20-04-22</h1>
+    <div name="esercizio1">
+        <p>
+            Chi l'azzecca? 
+            <form>
+                <input type="text" id="input1" placeholder="Giocatore 1" max="100" min="1">
+                <input type="text" id="input2" placeholder="Giocatore 2" max="100" min="1">
+                <input type="button" value="Submit" id="submit1">
+            </form>
+        </p>
+        <pre><code id="output1"></code></pre>
+        <script type="text/javascript" src="./es1.js"></script>
+    </div>
+    <br>
+    <div name="esercizio2">
+        <p>
+            Menu dei dolci
+            <form>
+                <input type="text" id="input3" placeholder="Inserisci un numero">
+                <input type="button" value="Submit" id="submit2">
+            </form>
+        </p>
+        <ol id="menu">
+            
+        </ol>
+        <pre><code id="output2"></code></pre>
+        <script type="text/javascript" src="./es2.js"></script>
+    </div>
+    <br>
+    <div name="esercizio3">
+        <p>
+            Il carcere di Gotham
+            <form>
+                Inserisci nuova guardia <br>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nomeGuard" id="nomeGuard" required><br>
+                <label for="eta">Età: </label>
+                <input type="number" name="etaGuard" id="etaGuard" required><br>
+                <input type="button" value="Submit" id="submit4">
+            </form>
+            <br>
+            <form>
+                Inserisci nuovo prigioniero <br>
+                <label for="idPrig">Nome: </label>
+                <input type="text" name="nomePrig" id="nomePrig" required><br>
+                <label for="eta">Età: </label>
+                <input type="number" name="etaPrig" id="etaPrig" required><br>
+                <label for="matricola">Matricola: </label>
+                <input type="number" name="matricola" id="matricola" required><br>
+                <label for="datain">Data Incarceramento: </label>
+                <input type="date" name="datain" id="datain" required>
+                <label for="dataout">Data Scarceramento: </label>
+                <input type="date" name="dataout" id="dataout" required> <br>
+                <label for="crimine">Crimine:</label>
+                <input type="text" name="crimine" id="crimine" required> <br>
+                <input type="button" value="Submit" id="submit5">
+            </form>
+        </p>
+        <div>
+            <label>Elenca:</label>
+            <input type="button" value="Guardie" id="elencaGuard">
+            <input type="button" value="Prigionieri" id="elencaPrig">
+            <input type="button" value="Fascicoli" id="elencaFasc">
+            <input type="button" value="Riepilogo Completo" id="riepilogo">
+        </div><br>
+        <div>
+            <label>Ricerca:</label>
+            <input type="text" name="ricerca" id="ricerca" placeholder="Nome prigioniero">
+            <input type="button" value="Submit" id="submit6">
+        </div>
+        <pre><code id="output3"></code></pre>
+        <script type="text/javascript" src="./es3.js"></script>
+    </div>
+</body>
+</html>
+
+
