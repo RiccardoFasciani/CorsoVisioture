@@ -1,15 +1,11 @@
-import './App.css';
-import Somma from './Saluto/Somma';
+import "./App.css";
+import Somma from "./Saluto/Somma";
 
 function App() {
-
- 
   return (
-  <>
-   <Somma/>
-   
- 
-  </>
+    <>
+      <Somma />
+    </>
   );
 }
 
