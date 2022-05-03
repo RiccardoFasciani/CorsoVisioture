@@ -1,10 +1,14 @@
 import "./App.css";
-import Somma from "./Saluto/Somma";
+import Card from "./Components/Card";
+import Contatore from "./Components/Contatore";
+import Form from "./Components/Form";
 
 function App() {
   return (
     <>
-      <Somma />
+      <Card>
+        <Form />
+      </Card>
     </>
   );
 }
