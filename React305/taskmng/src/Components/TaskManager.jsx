@@ -29,7 +29,6 @@ const TaskManager = () => {
 
   return (
     <Wrapper isModified={isModified}>
-      {" "}
       <div>
         <form onSubmit={inputHandler} action="">
           <label htmlFor="">
