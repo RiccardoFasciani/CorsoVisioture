@@ -53,7 +53,7 @@ function App() {
         </label>
         <br />
         <label>
-          Inserisci data della nota
+          Inserisci Data della nota
           <br />
           <input type="date" ref={inputData} />
         </label>
