@@ -5,6 +5,7 @@ const Card = (props) => {
         Titolo={props.obj[props.id - 1].titolo}
       </h1>
       <h1 onClick={props.chiudifocus}>Testo={props.obj[props.id - 1].nota}</h1>
+      <h1 onClick={props.chiudifocus}> Data ={props.obj[props.id - 1].data}</h1>
     </div>
   );
 };

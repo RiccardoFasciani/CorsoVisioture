@@ -2,6 +2,7 @@ import "./App.css";
 import Card from "./Components/Card";
 import { useState, useRef } from "react";
 function App() {
+  const inputData = useRef();
   const inputNota = useRef();
   const inputTitolo = useRef();
   const [note, setNote] = useState([]);
@@ -19,6 +20,20 @@ function App() {
         titolo: inputTitolo.current.value,
         nota: inputNota.current.value,
         id: id,
+        data: inputData.current.value,
+      },
+    ]);
+  };
+  const editNota = (event) => {
+    event.preventDefault();
+    setNote([...note.filter((nota) => nota.id != onfocus)]);
+    setNote((prevState) => [
+      ...prevState,
+      {
+        titolo: inputTitolo.current.value,
+        nota: inputNota.current.value,
+        id: onfocus,
+        data: inputData.current.value,
       },
     ]);
   };
@@ -36,8 +51,15 @@ function App() {
           <br />
           <input type="text" ref={inputNota} />
         </label>
+        <br />
+        <label>
+          Inserisci data della nota
+          <br />
+          <input type="date" ref={inputData} />
+        </label>
         <input type="submit" value="Submit" />
       </form>
+
       {!onfocus &&
         note.map((nota) => {
           return (
@@ -52,7 +74,10 @@ function App() {
           );
         })}
       {onfocus != 0 && (
-        <Card id={onfocus} chiudifocus={chiudifocus} obj={note} />
+        <div>
+          <Card id={onfocus} chiudifocus={chiudifocus} obj={note} />
+          <button onClick={editNota}>Modifica nota</button>
+        </div>
       )}
     </div>
   );
